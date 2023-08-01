@@ -1,0 +1,125 @@
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  text-decoration: none;
+  list-style: none;
+  scroll-behavior: smooth;
+}
+
+body {
+  background-color: #2B2E33;
+}
+
+.center-flex{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.column{
+  flex-direction: column;
+}
+
+.column_form{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+.column_product{
+  flex-direction: column;
+  width: 100%;
+}
+
+i{
+  color: #fafafa;
+  cursor: pointer;
+}
+
+.btn-add,
+.btn-buy,
+.btn-delete {
+    cursor: pointer;
+    padding: 10px 35px;
+    color: #fafafa;
+    border-radius: 10px;
+    border: none;
+    transition: 0.3s all ease-out;
+}
+
+.btn-buy,
+.btn-add {
+    background: rgb(245,130,31);
+    background: linear-gradient(90deg, rgba(245,130,31,1) 0%, rgba(205,71,18,1) 100%);
+}
+
+.btn-buy,
+.btn-delete {
+    width: 100%;
+}
+
+.btn-delete {
+    border: 2px solid #F5821F;
+    background-color: transparent;
+}
+
+.btn-delete:hover {
+    background: #F5821F;
+    transition: 0.3s all ease-in;
+}
+
+.sponsor_img1{
+  background: url(/src/pages/imgs/sponsors/honda-logo.png) no-repeat center;
+}
+
+.sponsor_img2{
+  background: url(/src/pages/imgs/sponsors/ducati-logo.png) no-repeat center;
+}
+
+.sponsor_img3{
+  background: url(/src/pages/imgs/sponsors/Harley-Davidson-Logo.png) no-repeat center;
+}
+
+.sponsor_img4{
+  background: url(/src/pages/imgs/sponsors/BMW-Logo.png) no-repeat center;
+}
+
+.sponsor_img5{
+  background: url(/src/pages/imgs/sponsors/suzuki-logo.png) no-repeat center;
+}
+
+.login-img{
+  background: url(/src/pages/imgs/login-register/moto-login.jpg) no-repeat center;
+}
+
+.login-img-register{
+  background: url(/src/pages/imgs/login-register/moto-register.jpg) no-repeat center;
+}
+
+.error{
+  color: #F5821F;
+  text-align: center;
+}
+
+.active.active {
+	background-color: #4d4d4d;
+}
+
+.open-menu{
+  transform: translate(0%);
+  transition: all 0.5s cubic-bezier(0.92, 0.01, 0.35, 0.99);
+}
+
+.show-overlay {
+  display: block;
+}
+
+.products > div > * {
+  pointer-events: none;
+}
+
+.dividerComments {
+  border-bottom: #F5821F 0.5px solid;
+}
